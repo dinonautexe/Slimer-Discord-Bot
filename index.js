@@ -11,11 +11,12 @@ console.log(`Your app is listening at http://localhost:${port}`)
 const discord = require('discord.js')
 const client = new discord.Client();
 
-const ldb = require('list-discordbot');
-const LDB = new ldb ('fuPOtZNmvOuOvSGXDDVrBzAglBAXZobpHCliRZcZjJqLxyxJyd', client);
-
 require('dotenv').config();
 const token = process.env.TOKEN
+const ldbtoken = process.env.LDBTOKEN
+
+const ldb = require('list-discordbot');
+const LDB = new ldb (ldbtoken, client);
 
 const Dlang = require('discordbot-script');
 
