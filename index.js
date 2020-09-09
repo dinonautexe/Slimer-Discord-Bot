@@ -13,10 +13,10 @@ const client = new discord.Client();
 
 require('dotenv').config();
 const token = process.env.TOKEN
-const ldbtoken = process.env.LDBTOKEN
+const token2 = process.env.LDBTOKEN
 
 const ldb = require('list-discordbot');
-const LDB = new ldb (ldbtoken, client);
+const LDB = new ldb (token2, client);
 
 const Dlang = require('discordbot-script');
 
@@ -43,7 +43,7 @@ bot.Status(
     },
     
     1: {
-      description: "New Slimer In Progress",
+      description: "YEETING KIDS OFF CLIFFS",
       type: "PLAYING"
     }
   },
